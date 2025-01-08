@@ -1,0 +1,42 @@
+/* src/app/globals.css */
+
+/* Basic resets or additional global styles can be placed here */
+
+/* Grid cell style */
+.grid-cell {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #333;
+}
+
+/* Color classes for symbols */
+.symbol_0 {
+  background-color: #000;        /* black */
+}
+.symbol_1 {
+  background-color: #0074D9;     /* blue */
+}
+.symbol_2 {
+  background-color: #FF4136;     /* red */
+}
+.symbol_3 {
+  background-color: #2ECC40;     /* green */
+}
+.symbol_4 {
+  background-color: #FFDC00;     /* yellow */
+}
+.symbol_5 {
+  background-color: #AAAAAA;     /* grey */
+}
+.symbol_6 {
+  background-color: #F012BE;     /* fuchsia */
+}
+.symbol_7 {
+  background-color: #FF851B;     /* orange */
+}
+.symbol_8 {
+  background-color: #7FDBFF;     /* teal */
+}
+.symbol_9 {
+  background-color: #870C25;     /* brown */
+}
