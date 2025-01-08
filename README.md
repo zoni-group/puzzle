@@ -117,29 +117,7 @@ Each `ExampleData` consists of an `input` and `output` grid, represented as two-
 
 ## API Integration
 
-The application verifies user answers by communicating with a backend API. Ensure the API endpoint is correctly configured in `src/app/page.tsx`:
-
-```typescript
-const checkAnswer = async () => {
-  const puzzleId = 'h3dda6jbel';
-  const answer = JSON.stringify(puzzleData.test[0].output);
-  const response = await fetch(`https://www.zoni.edu/api/method/zoni_edu.zoni_edu.doctype.puzzle.puzzle.check_answer?puzzle_id=${puzzleId}&answer=${encodeURIComponent(answer)}`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-
-  const data = await response.json();
-  console.log('Check Answer Response:', data);
-  const resultElement = document.getElementById('check-answer-result');
-  if (resultElement) {
-    if (data.message) {
-      resultElement.innerText = data.message;
-    }
-  }
-};
-```
+The application verifies user answers by communicating with a backend API.
 
 ## Contributing
 
